@@ -1,0 +1,114 @@
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+      }
+
+      .absolute {
+        position: absolute;
+        background-color: chartreuse;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+      }
+
+      .top-right {
+        position: absolute;
+        background-color: red;
+        top: 0px;
+        right: 0px;
+        height: 100px;
+        width: 100px;
+        translate: 50% -50%;
+      }
+
+      .top-left {
+        position: absolute;
+        background-color: red;
+
+        height: 100px;
+        width: 100px;
+        translate: -50% -50%;
+      }
+      .bottom-right {
+        position: absolute;
+        background-color: red;
+        bottom: 0;
+        right: 0;
+        height: 100px;
+        width: 100px;
+        translate: 50% 50%;
+      }
+
+      .bottom-left {
+        position: absolute;
+        background-color: red;
+        bottom: 0;
+        left: 0;
+        height: 100px;
+        width: 100px;
+        translate: -50% 50%;
+      }
+
+      .left {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        background-color: aqua;
+        translate: -50% -50%;
+      }
+
+      .left2 {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        background-color: aqua;
+        translate: -50% 50%;
+      }
+
+      .right {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        background-color: aqua;
+        translate: 50% -50%;
+      }
+
+      .right2 {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        background-color: aqua;
+        translate: 50% 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="absolute box">
+      <div class="top-right">
+        <section class="right">
+          <div class="1"></div>
+        </section>
+      </div>
+      <div class="top-left">
+        <section class="left">
+          <div class="2"></div>
+        </section>
+      </div>
+      <div class="bottom-right">
+        <section class="right2">
+          <div class="3"></div>
+        </section>
+      </div>
+      <div class="bottom-left">
+        <section class="left2">
+          <div class="4"></div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

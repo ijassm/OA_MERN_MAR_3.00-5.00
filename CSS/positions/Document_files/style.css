@@ -1,0 +1,38 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container {
+  max-width: 1000px;
+  margin-inline: auto;
+  width: 95%;
+}
+
+@media (min-width: 600px) {
+  .flex-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  article {
+    flex-basis: calc(50% - 10px);
+  }
+}
+
+@media (min-width: 800px) {
+  .flex-wrapper {
+    flex-wrap: nowrap;
+  }
+  .image {
+    width: 500px;
+  }
+}

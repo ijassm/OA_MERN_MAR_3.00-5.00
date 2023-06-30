@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPRaII37HH1EywxMv7lva095T5ZkG3LPbtsjM9TQGUHGZodjVP-aqMOyRS29Iy7GqnSDsSz8uwBIA9EMGunNOYptflStyX1F1BdvKKBXVyBnm5aOubEkqqcWXfnmXJHgQrFKxX2ruOH9Ymrut1XZop_BLVhvjgWYzmQpfgCb60MmgrMo_NMd9IQ-mr/s1600/mvehfqz6w2ges2dj.jpg);
+        overflow: hidden;
+      }
+
+      .birds {
+        position: absolute;
+        max-width: 200px;
+        animation-name: brids;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+      }
+
+      .aeroplane {
+        position: absolute;
+        max-width: 800px;
+        animation-name: aeroplane;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+        /* animation-direction: alternate; */
+      }
+
+      .clouds {
+        position: absolute;
+        max-width: 200px;
+        animation-name: clouds;
+        animation-duration: 50s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes aeroplane {
+        from {
+          left: -800px;
+          top: 50%;
+        }
+
+        to {
+          left: 100%;
+          top: 10%;
+        }
+      }
+
+      @keyframes clouds {
+        from {
+          top: 10%;
+          left: 0px;
+        }
+
+        to {
+          top: 10%;
+          left: 100%;
+        }
+      }
+
+      @keyframes brids {
+        from {
+          top: 10%;
+          right: 0px;
+        }
+
+        to {
+          top: 10%;
+          right: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      class="clouds"
+      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjebVgprvCHdypR1LosN8FqEeW1XX_5d3Pb1L6WScyNF1ebtgmkBbSOfX6dJ84ukcOeX0KbZ6sFRaNdiYTwhJEiNrgKvg1AeuKmDa40aHGWjA8duj6biCkMcK0DdOEnYZI7vRdyPkKYZTAJF5A-Itz5f3w44qk6w7lFn9lB6JWUESyzmScKDremjd_H/s1600/imgbin_cloud-rain-computer-icons-png.png"
+      alt="cloud"
+      width="100%"
+    />
+    <img
+      class="birds"
+      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiNNPel4eFtd3WFlz5b-u0QlJeT0MRRPV99FAI5QjsSlvv0QpBeMaOcClzZVwctt28ZWEqx7jwPJ2qWPnb4Sh07zw_y0U5RlZh0zXeHTRgZffqJ7yINWghLPRjr5jfk_1cupGPknnP0YdSjs7M4qSDG-QtB4u2XZuLGq_0KAOFCuY5clhbRR-RSytmK/s16000/pngegg0258.png"
+      alt="not found"
+      width="100%"
+    />
+    <img
+      class="aeroplane"
+      src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjj67WwVOyG3nDIDF-7pJyOmlRFADjEayackEpefS2X_lWiH6erOX_w5tPCmGfteB-o8jFgaoIQ-BMC2hHSA5N5fbdMsWs7PhebjwYauDGqXluUiK9DDHl883kiur146GRkfWvfp-a34S1h8U1QuoswMHstFBBAuCHV-FP2TJ4uDvEOtONM4XdrClSt/s1600/png-image.png"
+      alt="not found"
+      width="100%"
+    />
+  </body>
+</html>

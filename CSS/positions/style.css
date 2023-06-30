@@ -1,0 +1,10 @@
+.box {
+  height: 100px;
+  width: 100px;
+}
+
+.absolute {
+  position: absolute;
+  color: rgb(49, 0, 244);
+  translate: -50% -50%;
+}

@@ -1,0 +1,115 @@
+
+<!-- saved from url=(0031)http://127.0.0.1:5501/card.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+      * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: content-box;
+        font-family: "Ubuntu", sans-serif;
+      }
+
+      .flex {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+      }
+
+      .card {
+        max-width: 300px;
+        flex-basis: 300px;
+        box-shadow: 2px 2px 10px 0px;
+        border-radius: 10px;
+      }
+
+      .card > img {
+        border-top-right-radius: 50%;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin-inline: auto;
+        width: 95%;
+      }
+
+      .content {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .title {
+        font-size: 20px;
+        padding: 0%;
+        background-color: aquamarine;
+        width: fit-content;
+        border-radius: 20px;
+      }
+    </style>
+    </head><body>
+      <main class="flex container">
+        <section class="card">
+          <img src="./card_files/logo-2582748_960_720.webp" alt="" width="200px">
+          <div class="title"><h3>TITLE</h3></div>
+          <article><p>Lorem ipsum dolor sit amet consectetur.</p></article>
+          <div class="title"><h5>code</h5></div>
+        </section>
+
+        <section class="card">
+          <img src="./card_files/logo-2582748_960_720.webp" alt="" width="200px">
+          <div><h3 class="title">TITLE</h3></div>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <div class="title"><h5>code</h5></div>
+        </section>
+
+        <section class="card">
+          <img src="./card_files/logo-2582748_960_720.webp" alt="" width="200px">
+          <div><h3 class="title">TITLE</h3></div>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <div class="title"><h5>code</h5></div>
+        </section>
+      </main>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+  
+
+</body></html>

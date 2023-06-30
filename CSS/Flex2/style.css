@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: content-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.flex {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.card {
+  max-width: 300px;
+  flex-basis: 300px;
+  box-shadow: 2px 2px 10px 0px;
+  border-radius: 10px;
+}
+
+.card > img {
+  border-top-right-radius: 50%;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+  width: 95%;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  font-size: 20px;
+  padding: 0%;
+  background-color: aquamarine;
+  width: fit-content;
+  border-radius: 20px;
+}
+
+@media (min-width=500px) {
+  .flex {
+    background-color: antiquewhite;
+  }
+}
