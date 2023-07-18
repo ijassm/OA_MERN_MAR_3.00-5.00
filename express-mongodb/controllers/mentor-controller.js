@@ -38,3 +38,15 @@ exports.updateOneByID = async (req, res) => {
       .json({ error: "An error occurred while retrieving mentors." });
   }
 };
+
+exports.deleteOneByID = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const mentor = await mentorModel.findByIdAndDelete(id);
+    res.status(200).json({ id: mentor._id, message: "deleted successfully" });
+  } catch (error) {
+    res
+      .status(500)
+      .json({ error: "An error occurred while retrieving mentors." });
+  }
+};
