@@ -3,7 +3,7 @@ const { mentorModel } = require("../models/mentor-model");
 exports.addOne = async (req, res) => {
   try {
     console.log(req.body);
-    var post = new mentorModel({
+    const post = new mentorModel({
       username: req.body.username,
       phoneNumber: req.body.phoneNumber,
       password: req.body.password,
@@ -44,6 +44,21 @@ exports.deleteOneByID = async (req, res) => {
     const { id } = req.params;
     const mentor = await mentorModel.findByIdAndDelete(id);
     res.status(200).json({ id: mentor._id, message: "deleted successfully" });
+  } catch (error) {
+    res
+      .status(500)
+      .json({ error: "An error occurred while retrieving mentors." });
+  }
+};
+
+exports.deleteManyByFilter = async (req, res) => {
+  console.log("working------");
+  try {
+    const data = req.query;
+    console.log(data);
+    res.send(data);
+    const mentor = await mentorModel.deleteMany(data);
+    res.status(200).json(mentor);
   } catch (error) {
     res
       .status(500)
